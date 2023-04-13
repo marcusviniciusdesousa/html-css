@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização usando Pseudo-Classes/Elementos</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #e4d4d4, #777272);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section{
+            background-color: white;
+            margin:0 auto;
+            border: 1px solid black;
+            border-radius: 30px;
+            width: 1000px;
+        }
+
+        h1, h2{
+            text-align: center;
+            font-size: 2em;
+            color: darkslategray;
+        }
+        
+        p {
+            text-align: center;
+            color: rgb(154, 204, 37);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(243, 185, 38);
+        }
+
+        a:hover {
+            color: gold;
+            text-decoration: underline;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+
+        a:visited{
+            color: darkgoldenrod;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(255, 202, 66);
+        }
+
+        a::after{
+            color: #777272;
+            content: " [LINK]";
+            font-style: italic;
+        }
+
+        a::before {
+            content: "⇨ ";
+        }
+
+        .destaque {
+            background-color: #4944447c;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Estilizando links!</h1>
+        <h1>Título</h1>
+        <ul>
+            <li>
+                <p>Link para o repositório  <a href="https://github.com/gustavoguanabara" target="_blank">https://github.com/gustavoguanabara</a>.</p>
+            </li>
+            <li>
+                <p>Link para o site <a href="https://www.cursoemvideo.com" target="_blank" class="destaque">CursoEmVídeo</a>.</p>
+            </li>
+            <li>
+                <p>Link para o canal no <a href="https://www.youtube.com/@CursoemVideo" target="_blank">Youtube</a></p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

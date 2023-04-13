@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2{
+            font: normal 2em Arial, Helvetica, sans-serif;
+            color: darkblue;
+        }
+
+        p{
+            color: rgb(135, 135, 81);
+        }
+        
+        div > p{
+            display: none;
+            color: blueviolet;
+            background-color: black;
+            width: 100px;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <h2>Subtitulo</h2>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        Passe o mouse aqui!
+        <p>SUPRESA</p>
+    </div>
+    <p>acabo</p>
+</body>
+</html>

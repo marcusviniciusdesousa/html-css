@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin: auto 0px;
+    background-color: black;
+}
+h1 {
+    color: aliceblue;
+}
+
+.painel-cursos {
+    margin: auto;
+    width: 410px;
+    background-color: aquamarine;
+}
