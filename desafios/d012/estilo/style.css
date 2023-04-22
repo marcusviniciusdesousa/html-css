@@ -70,6 +70,8 @@ section.imagem{
     padding: 0vh 0vh;
     background-position: right center;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section.imagem p{
